@@ -1,0 +1,24 @@
+.DS_Store
+extraction/logs/*
+extraction/.cache/*
+extraction/RED_metadata_output/*
+extraction/list_extract.txt
+color-calibration/logs/*
+color-calibration/.cache/*
+color-calibration/RED_metadata_output/*
+color-calibration/list_extract.txt
+
+# OS Related
+._*
+*/._*
+*/.DS_Store
+
+# Python Related
+*/__pycache__/*
+
+# RAFT
+alignment/RAFT
+alignment/logs/*
+
+# raw
+raw/logs/*

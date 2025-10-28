@@ -15,7 +15,7 @@ The pipeline converts raw RED camera footage (.R3D) into color-calibrated AVIF i
 ```
 Step 1: Frame Extraction     → High-quality EXR images (extraction/)
 Step 2: Color Calibration   → Color-corrected AVIF images (color-calibration/)
-Step 3: Flow Alignment      → Temporally aligned sequences (TODO)
+Step 3: Flow Alignment      → Temporally aligned sequences (alignment/)
 Step 4: Camera Calibration and FLAME Tracking → Camera parameters and FLAME head model parameters (TODO)
 Step 5: Relighting    → Combining OLAT images to create relight images (TODO)
 ```
@@ -26,10 +26,10 @@ Step 5: Relighting    → Combining OLAT images to create relight images (TODO)
 
 - **[`extraction/`](extraction/README.md)** - Extract frames from RED camera footage to EXR format
 - **[`color-calibration/`](color-calibration/README.md)** - Apply professional color correction and convert to AVIF
+- **[`alignment/`](alignment/README.md)** - Optical flow alignment for temporal consistency
 
 ### *Coming Soon*: Additional Processing Steps  
 
-- **`alignment/`** - Optical flow alignment for temporal consistency (Coming Soon)
 - **`camera-calibration/`** - Camera calibration and FLAME tracking (Coming Soon)
 - **`relighting/`** - Relighting (Coming Soon)
 
@@ -66,6 +66,23 @@ sbatch slurm_calibrated_avif.sh 001 --no-color-calibration
 
 See [`color-calibration/README.md`](color-calibration/README.md) for detailed instructions.
 
+### Step 3: Optical Flow Alignment
+
+Apply optical flow alignment for temporal consistency:
+
+```bash
+cd alignment/
+# Install [RAFT](https://github.com/princeton-vl/RAFT)
+
+# Align single subject
+sbatch slurm_flow_align.sh 001
+
+# Align with overwrite
+sbatch slurm_flow_align.sh 001 --overwrite
+```
+
+See [`alignment/README.md`](alignment/README.md) for detailed instructions.
+
 ## Dataset Details
 
 - **139 subjects** with diverse facial characteristics and skin tones
@@ -77,8 +94,9 @@ See [`color-calibration/README.md`](color-calibration/README.md) for detailed in
 ## Requirements
 
 ### Software Dependencies
-- **Python 3.8+** with packages: `numpy`, `OpenEXR`, `PIL`, `pillow_avif`
-- **REDline SDK** for .R3D file processing - Install REDline SDK from https://www.red.com/downloads 
+- **Python 3.8+** with packages: `numpy`, `OpenEXR`, `PIL`, `pillow_avif`, `torch` (PyTorch)
+- **REDline SDK** for .R3D file processing - [https://www.red.com/downloads](https://www.red.com/downloads)
+- **RAFT** for optical flow alignment - [https://github.com/princeton-vl/RAFT](https://github.com/princeton-vl/RAFT)
 - **SLURM** or other workload manager for distributed processing
 
 ### Hardware Requirements  

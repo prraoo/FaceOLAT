@@ -16,8 +16,8 @@ The pipeline converts raw RED camera footage (.R3D) into color-calibrated AVIF i
 Step 1: Frame Extraction     → High-quality EXR images (extraction/)
 Step 2: Color Calibration   → Color-corrected AVIF images (color-calibration/)
 Step 3: Flow Alignment      → Temporally aligned sequences (alignment/)
-Step 4: Camera Calibration and FLAME Tracking → Camera parameters and FLAME head model parameters (TODO)
-Step 5: Relighting    → Combining OLAT images to create relight images (TODO)
+Step 4: Relighting          → Novel lighting synthesis (relighting/)
+Step 5: Camera Calibration and FLAME Tracking → Camera parameters and FLAME head model parameters (TODO)
 ```
 
 ## Directory Structure
@@ -27,11 +27,8 @@ Step 5: Relighting    → Combining OLAT images to create relight images (TODO)
 - **[`extraction/`](extraction/README.md)** - Extract frames from RED camera footage to EXR format
 - **[`color-calibration/`](color-calibration/README.md)** - Apply professional color correction and convert to AVIF
 - **[`alignment/`](alignment/README.md)** - Optical flow alignment for temporal consistency
-
-### *Coming Soon*: Additional Processing Steps  
-
-- **`camera-calibration/`** - Camera calibration and FLAME tracking (Coming Soon)
-- **`relighting/`** - Relighting (Coming Soon)
+- **[`relighting/`](relighting/README.md)** - Synthesize novel lighting using environment maps
+- **[`calibration/`](calibration/README.md)** - Pre-calibrated camera parameters for 3D reconstruction (optional)
 
 ## Quick Start Guide
 
@@ -72,7 +69,7 @@ Apply optical flow alignment for temporal consistency:
 
 ```bash
 cd alignment/
-# Install [RAFT](https://github.com/princeton-vl/RAFT)
+# Install RAFT: https://github.com/princeton-vl/RAFT
 
 # Align single subject
 sbatch slurm_flow_align.sh 001
@@ -82,6 +79,25 @@ sbatch slurm_flow_align.sh 001 --overwrite
 ```
 
 See [`alignment/README.md`](alignment/README.md) for detailed instructions.
+
+### Step 4: Relighting
+
+Synthesize novel lighting conditions using environment maps:
+
+```bash
+cd relighting/
+
+# Relight single subject (default: grace cathedral)
+sbatch slurm_relight.sh ID20003
+
+# Relight with custom environment and scale
+sbatch slurm_relight.sh ID20003 --envname studio --envscale 0.02
+
+# Batch processing
+./submit_relight_batch.sh --subject ID20003
+```
+
+See [`relighting/README.md`](relighting/README.md) for detailed instructions.
 
 ## Dataset Details
 
@@ -98,6 +114,9 @@ See [`alignment/README.md`](alignment/README.md) for detailed instructions.
 - **REDline SDK** for .R3D file processing - [https://www.red.com/downloads](https://www.red.com/downloads)
 - **RAFT** for optical flow alignment - [https://github.com/princeton-vl/RAFT](https://github.com/princeton-vl/RAFT)
 - **SLURM** or other workload manager for distributed processing
+
+**Optional (for 3D reconstruction)**:
+- **Agisoft Metashape Professional** - [https://www.agisoft.com/](https://www.agisoft.com/)
 
 ### Hardware Requirements  
 - **Storage**: ~9TB per full 40-camera dataset and 139 subjects. Note this is only the RAW data. Consider additional storage for the processed data.

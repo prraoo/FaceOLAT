@@ -1,0 +1,692 @@
+================================================================================
+FACEOLAT CALIBRATION RECONSTRUCTION VERIFICATION REPORT
+================================================================================
+
+SUMMARY
+--------------------------------------------------------------------------------
+Total reconstructions found: 71
+Expected cameras per reconstruction: 40
+
+✅ Complete:      41 (57.7%)
+⚠️  Incomplete:    30 (42.3%)
+❌ Failed:         0 (0.0%)
+🔍 Missing:        0 (0.0%)
+
+CROSS-REFERENCE WITH CALIBRATION MAPPING
+--------------------------------------------------------------------------------
+Expected calibrations: 75
+Found reconstructions: 71
+Missing reconstructions: 6
+Unexpected reconstructions: 2
+
+Missing Reconstructions:
+  - 2024_09_18/C004 (CB0001) → 2 subjects
+  - 2024_09_20/C058 (CB0010) → 2 subjects
+  - 2024_10_16/C052 (CB0019) → 3 subjects
+  - 2024_10_16/C061 (CB0020) → 3 subjects
+  - 2024_10_16/C070 (CB0021) → 2 subjects
+  - 2024_11_13/C207 (CB0050) → 2 subjects
+
+Unexpected Reconstructions:
+  - 2024_09_18/C005
+  - 2024_09_20/C062
+
+
+✅ COMPLETE RECONSTRUCTIONS
+--------------------------------------------------------------------------------
+Date Folder     Take     Cameras    Error      Files
+--------------------------------------------------------------------------------
+2024_09_18      C005     40/40     0.83px     xml:+ obj:+
+2024_09_19      C011     40/40     0.81px     xml:+ obj:+
+2024_09_19      C030     40/40     0.80px     xml:+ obj:+
+2024_09_20      C056     40/40     0.93px     xml:+ obj:+
+2024_10_16      C030     40/40     0.85px     xml:+ obj:+
+2024_10_17      C094     40/40     0.91px     xml:+ obj:+
+2024_10_18      C117     40/40     0.86px     xml:+ obj:+
+2024_10_18      C145     40/40     0.81px     xml:+ obj:+
+2024_10_18      C149     40/40     0.82px     xml:+ obj:+
+2024_10_18      C158     40/40     1.73px     xml:+ obj:+
+2024_10_18      C164     40/40     0.98px     xml:+ obj:+
+2024_11_13      C155     40/40     0.80px     xml:+ obj:+
+2024_11_13      C164     40/40     0.72px     xml:+ obj:+
+2024_11_13      C170     40/40     0.69px     xml:+ obj:+
+2024_11_13      C176     40/40     0.71px     xml:+ obj:+
+2024_11_13      C181     40/40     0.65px     xml:+ obj:+
+2024_11_13      C196     40/40     0.74px     xml:+ obj:+
+2024_11_13      C216     40/40     0.69px     xml:+ obj:+
+2024_11_13      C224     40/40     0.68px     xml:+ obj:+
+2024_11_14      C232     40/40     0.72px     xml:+ obj:+
+2024_11_14      C238     40/40     0.69px     xml:+ obj:+
+2024_11_14      C243     40/40     0.69px     xml:+ obj:+
+2024_11_14      C248     40/40     0.66px     xml:+ obj:+
+2024_11_14      C254     40/40     0.70px     xml:+ obj:+
+2024_11_14      C267     40/40     0.63px     xml:+ obj:+
+2024_11_14      C272     40/40     0.66px     xml:+ obj:+
+2024_11_14      C295     40/40     0.66px     xml:+ obj:+
+2024_11_14      C301     40/40     0.63px     xml:+ obj:+
+2024_12_11      C020     40/40     0.80px     xml:+ obj:+
+2024_12_11      C030     40/40     0.76px     xml:+ obj:+
+2024_12_11      C096     40/40     0.75px     xml:+ obj:+
+2024_12_11      C115     40/40     0.77px     xml:+ obj:+
+2024_12_12      C121     40/40     0.73px     xml:+ obj:+
+2024_12_12      C135     40/40     0.74px     xml:+ obj:+
+2024_12_12      C150     40/40     0.79px     xml:+ obj:+
+2024_12_12      C164     40/40     0.75px     xml:+ obj:+
+2024_12_12      C170     40/40     0.72px     xml:+ obj:+
+2024_12_12      C194     40/40     0.76px     xml:+ obj:+
+2024_12_13      C217     40/40     0.78px     xml:+ obj:+
+2024_12_13      C228     40/40     0.75px     xml:+ obj:+
+2024_12_13      C236     40/40     0.75px     xml:+ obj:+
+
+
+⚠️  INCOMPLETE RECONSTRUCTIONS
+--------------------------------------------------------------------------------
+Date Folder     Take     Cameras    Missing Files
+--------------------------------------------------------------------------------
+2024_09_19      C017     39/40     low camera count
+2024_09_19      C023     38/40     low camera count
+2024_09_19      C040     39/40     low camera count
+2024_09_19      C050     40/40     model.obj
+2024_09_20      C050     39/40     low camera count
+2024_09_20      C062     36/40     low camera count
+2024_09_20      C068     22/40     low camera count
+2024_09_20      C074     39/40     low camera count
+2024_09_20      C080     39/40     low camera count
+2024_10_16      C016     37/40     low camera count
+2024_10_16      C022     35/40     low camera count
+2024_10_16      C034     38/40     low camera count
+2024_10_16      C046     39/40     low camera count
+2024_10_17      C075     39/40     low camera count
+2024_10_17      C079     38/40     low camera count
+2024_10_17      C090     37/40     low camera count
+2024_10_17      C103     39/40     low camera count
+2024_10_17      C111     39/40     low camera count
+2024_10_18      C125     39/40     low camera count
+2024_10_18      C132     37/40     low camera count
+2024_10_18      C140     39/40     low camera count
+2024_11_08      C078     33/40     low camera count
+2024_11_08      C084     23/40     low camera count
+2024_11_08      C089     27/40     low camera count
+2024_11_08      C094     39/40     low camera count
+2024_11_08      C099     36/40     low camera count
+2024_11_08      C108     38/40     low camera count
+2024_11_13      C187     39/40     low camera count
+2024_11_13      C201     39/40     low camera count
+2024_11_14      C279     39/40     low camera count
+
+
+================================================================================
+DETAILED LISTING
+================================================================================
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_18/Reconstruction/C005
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.830 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_19/Reconstruction/C011
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.812 pixels (40 cameras)
+   Status: COMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_19/Reconstruction/C017
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 1.202 pixels (39 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_19/Reconstruction/C023
+   Cameras calibrated: 38/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 2.050 pixels (38 cameras)
+   Status: INCOMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_19/Reconstruction/C030
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.798 pixels (40 cameras)
+   Status: COMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_19/Reconstruction/C040
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 1.242 pixels (39 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_19/Reconstruction/C050
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✗
+   error.txt: ✓
+   Average error: 5.911 pixels (10 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_20/Reconstruction/C050
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 1.720 pixels (39 cameras)
+   Status: INCOMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_20/Reconstruction/C056
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.930 pixels (40 cameras)
+   Status: COMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_20/Reconstruction/C062
+   Cameras calibrated: 36/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 2.501 pixels (36 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_20/Reconstruction/C068
+   Cameras calibrated: 22/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 12.965 pixels (22 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_20/Reconstruction/C074
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.964 pixels (39 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_09_20/Reconstruction/C080
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.947 pixels (39 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_16/Reconstruction/C016
+   Cameras calibrated: 37/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 1.562 pixels (37 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_16/Reconstruction/C022
+   Cameras calibrated: 35/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 1.763 pixels (35 cameras)
+   Status: INCOMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_16/Reconstruction/C030
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.846 pixels (40 cameras)
+   Status: COMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_16/Reconstruction/C034
+   Cameras calibrated: 38/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.983 pixels (38 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_16/Reconstruction/C046
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.899 pixels (39 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_17/Reconstruction/C075
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 1.045 pixels (39 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_17/Reconstruction/C079
+   Cameras calibrated: 38/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 1.934 pixels (38 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_17/Reconstruction/C090
+   Cameras calibrated: 37/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 1.494 pixels (37 cameras)
+   Status: INCOMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_17/Reconstruction/C094
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.905 pixels (40 cameras)
+   Status: COMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_17/Reconstruction/C103
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.918 pixels (39 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_17/Reconstruction/C111
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.842 pixels (39 cameras)
+   Status: INCOMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_18/Reconstruction/C117
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.856 pixels (40 cameras)
+   Status: COMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_18/Reconstruction/C125
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.884 pixels (39 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_18/Reconstruction/C132
+   Cameras calibrated: 37/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.880 pixels (37 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_18/Reconstruction/C140
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.912 pixels (39 cameras)
+   Status: INCOMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_18/Reconstruction/C145
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.812 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_18/Reconstruction/C149
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.819 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_18/Reconstruction/C158
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 1.734 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_10_18/Reconstruction/C164
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.983 pixels (40 cameras)
+   Status: COMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_08/Reconstruction/C078
+   Cameras calibrated: 33/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 9.620 pixels (33 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_08/Reconstruction/C084
+   Cameras calibrated: 23/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 4.262 pixels (17 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_08/Reconstruction/C089
+   Cameras calibrated: 27/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 11.570 pixels (27 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_08/Reconstruction/C094
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 1.179 pixels (39 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_08/Reconstruction/C099
+   Cameras calibrated: 36/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 5.738 pixels (36 cameras)
+   Status: INCOMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_08/Reconstruction/C108
+   Cameras calibrated: 38/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 1.251 pixels (38 cameras)
+   Status: INCOMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_13/Reconstruction/C155
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.804 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_13/Reconstruction/C164
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.725 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_13/Reconstruction/C170
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.691 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_13/Reconstruction/C176
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.708 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_13/Reconstruction/C181
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.648 pixels (40 cameras)
+   Status: COMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_13/Reconstruction/C187
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.674 pixels (39 cameras)
+   Status: INCOMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_13/Reconstruction/C196
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.740 pixels (40 cameras)
+   Status: COMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_13/Reconstruction/C201
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.661 pixels (39 cameras)
+   Status: INCOMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_13/Reconstruction/C216
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.692 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_13/Reconstruction/C224
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.684 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_14/Reconstruction/C232
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.717 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_14/Reconstruction/C238
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.686 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_14/Reconstruction/C243
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.685 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_14/Reconstruction/C248
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.658 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_14/Reconstruction/C254
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.697 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_14/Reconstruction/C267
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.633 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_14/Reconstruction/C272
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.663 pixels (40 cameras)
+   Status: COMPLETE
+
+⚠️ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_14/Reconstruction/C279
+   Cameras calibrated: 39/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.975 pixels (39 cameras)
+   Status: INCOMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_14/Reconstruction/C295
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.660 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_11_14/Reconstruction/C301
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.632 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_11/Reconstruction/C020
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.803 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_11/Reconstruction/C030
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.755 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_11/Reconstruction/C096
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.747 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_11/Reconstruction/C115
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.771 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_12/Reconstruction/C121
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.725 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_12/Reconstruction/C135
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.739 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_12/Reconstruction/C150
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.786 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_12/Reconstruction/C164
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.750 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_12/Reconstruction/C170
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.719 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_12/Reconstruction/C194
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.756 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_13/Reconstruction/C217
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.781 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_13/Reconstruction/C228
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.754 pixels (40 cameras)
+   Status: COMPLETE
+
+✅ /CT/datasets23/static00/FaceOLAT/calibration/2024_12_13/Reconstruction/C236
+   Cameras calibrated: 40/40
+   cameras.xml: ✓
+   model.obj: ✓
+   error.txt: ✓
+   Average error: 0.751 pixels (40 cameras)
+   Status: COMPLETE
+
+================================================================================
+END OF REPORT
+================================================================================

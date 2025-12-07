@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document version="2.0.0">
+  <chunk label="Chunk 1" enabled="true">
+    <sensors next_id="40">
+      <sensor id="0" label="Cam01" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>12110.064382079994</f>
+          <cx>51.878508999096667</cx>
+          <cy>10.317481852324349</cy>
+          <b1>-130.10677762441085</b1>
+          <k1>-1.2267781603589383</k1>
+          <k2>-94.974264628555915</k2>
+          <k3>1447.2850087482855</k3>
+          <p1>0.13140119509109835</p1>
+          <p2>0.029286841887620523</p2>
+        </calibration>
+      </sensor>
+      <sensor id="1" label="Cam02" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>5120.5657418045685</f>
+          <cx>46.904214130782059</cx>
+          <cy>-30.387381240140407</cy>
+          <b1>1838.6799148186526</b1>
+          <k1>0.31001730353355833</k1>
+          <k2>-3.5147843320354042</k2>
+          <k3>-31.572169246527118</k3>
+          <p1>-0.019967121840204716</p1>
+          <p2>-0.017675944647717285</p2>
+        </calibration>
+      </sensor>
+      <sensor id="2" label="Cam03" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>10260.645429322152</f>
+          <cx>19.86849881283484</cx>
+          <cy>-82.17545456683871</cy>
+          <b1>-1412.1197417604112</b1>
+          <k1>28.671981692822555</k1>
+          <k2>-630.48715557158152</k2>
+          <k3>12903.832699010552</k3>
+          <p1>-0.23411382010154727</p1>
+          <p2>0.973919377783519</p2>
+        </calibration>
+      </sensor>
+      <sensor id="3" label="Cam04" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>13213.29653983543</f>
+          <cx>27.035052764283638</cx>
+          <cy>49.35441776698481</cy>
+          <b1>97.198995363128205</b1>
+          <k1>-2.4693179885683132</k1>
+          <k2>574.65406701246229</k2>
+          <k3>-25559.436545899021</k3>
+          <p1>-0.022817186851633326</p1>
+          <p2>0.0051949993803768139</p2>
+        </calibration>
+      </sensor>
+      <sensor id="4" label="Cam05" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+      </sensor>
+      <sensor id="5" label="Cam06" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>14300.575030107702</f>
+          <cx>-5.4750374575336194</cx>
+          <cy>21.702596337148599</cy>
+          <b1>213.23591822811852</b1>
+          <k1>-0.65108888615767668</k1>
+          <k2>-175.27407946994674</k2>
+          <k3>7334.3797783641758</k3>
+          <p1>-0.018913139215213461</p1>
+          <p2>0.1193948490975381</p2>
+        </calibration>
+      </sensor>
+      <sensor id="6" label="Cam07" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>12170.708788651968</f>
+          <cx>-35.298128547122019</cx>
+          <cy>-12.251732188355753</cy>
+          <b1>106.08643595868669</b1>
+          <k1>-0.2156593501246043</k1>
+          <k2>-111.21417186329437</k2>
+          <k3>2473.6707931064616</k3>
+          <p1>-0.053598423538078914</p1>
+          <p2>0.054770539446111655</p2>
+        </calibration>
+      </sensor>
+      <sensor id="7" label="Cam08" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>8148.4871668706173</f>
+          <cx>-733.83349240174596</cx>
+          <cy>187.11963655563281</cy>
+          <b1>1575.4429309765633</b1>
+          <k1>8.4934232603011974</k1>
+          <k2>-179.99415161386307</k2>
+          <k3>808.28209284404511</k3>
+          <p1>-0.15923932451016279</p1>
+          <p2>-0.064378990487234153</p2>
+        </calibration>
+      </sensor>
+      <sensor id="8" label="Cam09" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>4871.7661864077418</f>
+          <cx>-342.30699381616239</cx>
+          <cy>31.690341133778652</cy>
+          <b1>353.23397516348541</b1>
+          <k1>-0.17733763183942905</k1>
+          <k2>-4.8283446167871134</k2>
+          <k3>10.880373341966566</k3>
+          <p1>0.09035100769033369</p1>
+          <p2>0.013833273178442978</p2>
+        </calibration>
+      </sensor>
+      <sensor id="9" label="Cam10" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+      </sensor>
+      <sensor id="10" label="Cam11" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>8657.4035259940174</f>
+          <cx>-309.47558372249904</cx>
+          <cy>-179.66005978982099</cy>
+          <b1>436.03061566804416</b1>
+          <k1>1.657701235107492</k1>
+          <k2>31.47221146785818</k2>
+          <k3>-329.60318854367029</k3>
+          <p1>-0.070070433574619742</p1>
+          <p2>-0.049900867213932609</p2>
+        </calibration>
+      </sensor>
+      <sensor id="11" label="Cam12" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>5454.7090357051484</f>
+          <cx>458.15505374459178</cx>
+          <cy>34.828086389305639</cy>
+          <b1>673.42832897823155</b1>
+          <k1>0.87115177588238879</k1>
+          <k2>-2.5062007650510765</k2>
+          <k3>3.2344041994493673</k3>
+          <p1>0.14433421407174082</p1>
+          <p2>-0.043188266712341349</p2>
+        </calibration>
+      </sensor>
+      <sensor id="12" label="Cam13" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>9860.8075261867743</f>
+          <cx>-194.49527290138454</cx>
+          <cy>-267.49766673643137</cy>
+          <b1>323.75186162307261</b1>
+          <k1>1.4674123271907318</k1>
+          <k2>-144.84557520680971</k2>
+          <k3>1416.9716158924646</k3>
+          <p1>0.092461693081308763</p1>
+          <p2>0.060472598567391449</p2>
+        </calibration>
+      </sensor>
+      <sensor id="13" label="Cam14" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>19784.593538472964</f>
+          <cx>5.7160057945926326</cx>
+          <cy>114.67712725935726</cy>
+          <b1>-502.0907607776557</b1>
+          <k1>-4.4525991689974758</k1>
+          <k2>2535.8921820709716</k2>
+          <k3>-276394.71618185745</k3>
+          <p1>0.21293380496590752</p1>
+          <p2>0.084354768231583915</p2>
+        </calibration>
+      </sensor>
+      <sensor id="14" label="Cam15" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+      </sensor>
+      <sensor id="15" label="Cam16" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>12699.669922005358</f>
+          <cx>-240.6935743328284</cx>
+          <cy>190.85482866137656</cy>
+          <b1>3631.8375852373306</b1>
+          <k1>42.815966618257697</k1>
+          <k2>-11189.378137024587</k2>
+          <k3>530809.34777318931</k3>
+          <p1>-0.24489675353173404</p1>
+          <p2>0.58308836331152292</p2>
+        </calibration>
+      </sensor>
+      <sensor id="16" label="Cam17" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>4804.6641119398046</f>
+          <cx>70.382988890354511</cx>
+          <cy>36.410916149472385</cy>
+          <b1>263.71985032526703</b1>
+          <k1>-0.38474675751732706</k1>
+          <k2>-1.1336533416398251</k2>
+          <k3>18.2421734753488</k3>
+          <p1>0.040744624402153359</p1>
+          <p2>0.0013585367246197768</p2>
+        </calibration>
+      </sensor>
+      <sensor id="17" label="Cam18" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>8620.8439981425054</f>
+          <cx>-42.116046245441936</cx>
+          <cy>145.4381001766339</cy>
+          <b1>-49.056493632510616</b1>
+          <k1>0.71256701821513335</k1>
+          <k2>-3.7145071791442441</k2>
+          <k3>137.174426707056</k3>
+          <p1>-0.031559723673110537</p1>
+          <p2>-0.0075690955700653878</p2>
+        </calibration>
+      </sensor>
+      <sensor id="18" label="Cam19" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+      </sensor>
+      <sensor id="19" label="Cam20" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>7144.6182147589998</f>
+          <cx>-59.01613213635364</cx>
+          <cy>-107.98632149959853</cy>
+          <b1>444.82290404883179</b1>
+          <k1>1.0496132473703237</k1>
+          <k2>20.947957679086446</k2>
+          <k3>-146.08118397898582</k3>
+          <p1>0.067905632798584817</p1>
+          <p2>-0.070746949641841889</p2>
+        </calibration>
+      </sensor>
+      <sensor id="20" label="Cam21" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>12003.806103580109</f>
+          <cx>65.078800662898161</cx>
+          <cy>-354.04042981207772</cy>
+          <b1>59.762373122368146</b1>
+          <k1>3.3147094453097692</k1>
+          <k2>93.306082899009766</k2>
+          <k3>-4258.4988806971169</k3>
+          <p1>-0.11120584480441539</p1>
+          <p2>-0.19490306107078889</p2>
+        </calibration>
+      </sensor>
+      <sensor id="21" label="Cam22" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>11362.138379860429</f>
+          <cx>-159.79184176932426</cx>
+          <cy>66.49119528061928</cy>
+          <b1>-299.40469028662181</b1>
+          <k1>-2.9725762676823644</k1>
+          <k2>60.72647872255132</k2>
+          <k3>4032.7260441301905</k3>
+          <p1>0.11501834911590438</p1>
+          <p2>0.0016958838498513039</p2>
+        </calibration>
+      </sensor>
+      <sensor id="22" label="Cam23" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>12448.941095744176</f>
+          <cx>-66.224097533187361</cx>
+          <cy>-20.980546234396336</cy>
+          <b1>402.52475191091509</b1>
+          <k1>-0.08448598106812065</k1>
+          <k2>-118.03137887929967</k2>
+          <k3>3774.5129343709805</k3>
+          <p1>-0.022084013870765296</p1>
+          <p2>0.15779524396205397</p2>
+        </calibration>
+      </sensor>
+      <sensor id="23" label="Cam24" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>10365.517184492199</f>
+          <cx>-22.071438983203585</cx>
+          <cy>-52.328232334300871</cy>
+          <b1>443.24800623015165</b1>
+          <k1>-1.3030301198476613</k1>
+          <k2>1.5193721243664902</k2>
+          <k3>-117.3202762129611</k3>
+          <p1>-0.011630566341583095</p1>
+          <p2>-0.14054311648646539</p2>
+        </calibration>
+      </sensor>
+      <sensor id="24" label="Cam25" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+      </sensor>
+      <sensor id="25" label="Cam26" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>11993.322588584531</f>
+          <cx>132.61638000778902</cx>
+          <cy>-58.679859328315281</cy>
+          <b1>-235.59334682609455</b1>
+          <k1>-8.6516278708869336</k1>
+          <k2>1105.2575577022421</k2>
+          <k3>-88538.915481648117</k3>
+          <p1>0.21934775668804371</p1>
+          <p2>0.049254267251194743</p2>
+        </calibration>
+      </sensor>
+      <sensor id="26" label="Cam27" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>4226.9887051084252</f>
+          <cx>-219.30883872323486</cx>
+          <cy>-46.058869749244835</cy>
+          <b1>188.64589037548441</b1>
+          <k1>0.2059894071212395</k1>
+          <k2>-0.34038482088909128</k2>
+          <k3>1.3659772210285435</k3>
+          <p1>0.025346044504095087</p1>
+          <p2>-0.016674359867334204</p2>
+        </calibration>
+      </sensor>
+      <sensor id="27" label="Cam28" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>12283.096319605267</f>
+          <cx>35.857475798246398</cx>
+          <cy>-193.64109363736273</cy>
+          <b1>91.568599362467737</b1>
+          <k1>0.61497598992081826</k1>
+          <k2>5.5944853122944913</k2>
+          <k3>-1193.6749965112849</k3>
+          <p1>-0.011170811753932919</p1>
+          <p2>0.0089795230251364655</p2>
+        </calibration>
+      </sensor>
+      <sensor id="28" label="Cam29" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+      </sensor>
+      <sensor id="29" label="Cam30" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>4283.9406042758692</f>
+          <cx>-356.7603391886629</cx>
+          <cy>64.647715676952799</cy>
+          <b1>307.52644630206038</b1>
+          <k1>0.87903553461146744</k1>
+          <k2>1.8301757300187234</k2>
+          <k3>-4.9599853983969311</k3>
+          <p1>-0.080577098225851213</p1>
+          <p2>-0.013019808568621798</p2>
+        </calibration>
+      </sensor>
+      <sensor id="30" label="Cam31" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>7623.1465250316669</f>
+          <cx>-113.02939847584085</cx>
+          <cy>109.06535693416592</cy>
+          <b1>111.23582340476212</b1>
+          <k1>-1.5078692101281825</k1>
+          <k2>-0.60539733907155802</k2>
+          <k3>5.3000852107123091</k3>
+          <p1>-0.060521672005469158</p1>
+          <p2>0.027901007380332923</p2>
+        </calibration>
+      </sensor>
+      <sensor id="31" label="Cam32" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>9731.1615530107028</f>
+          <cx>218.81661295691481</cx>
+          <cy>61.316857709219455</cy>
+          <b1>-1356.7543442509057</b1>
+          <k1>3.0759011429455514</k1>
+          <k2>-71.175446240113018</k2>
+          <k3>-2702.6442969811583</k3>
+          <p1>-0.39968682463134259</p1>
+          <p2>0.051076746412107098</p2>
+        </calibration>
+      </sensor>
+      <sensor id="32" label="Cam33" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+      </sensor>
+      <sensor id="33" label="Cam34" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+      </sensor>
+      <sensor id="34" label="Cam35" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+      </sensor>
+      <sensor id="35" label="Cam36" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+      </sensor>
+      <sensor id="36" label="Cam37" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>8395.0293651392421</f>
+          <cx>-170.09531488398633</cx>
+          <cy>1020.0792684448877</cy>
+          <b1>384.137123431688</b1>
+          <k1>-7.1992972086672209</k1>
+          <k2>34.800078835667172</k2>
+          <k3>-49.174191382051035</k3>
+          <p1>0.1407728239334127</p1>
+          <p2>-0.63134276241945364</p2>
+        </calibration>
+      </sensor>
+      <sensor id="37" label="Cam38" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>9436.4903848505091</f>
+          <cx>-53.201635338225884</cx>
+          <cy>13.302281777970711</cy>
+          <b1>55.948163308549105</b1>
+          <k1>-0.63511659027926959</k1>
+          <k2>-85.346212809887533</k2>
+          <k3>2190.9959407687879</k3>
+          <p1>-0.054679423427773925</p1>
+          <p2>0.035602592449341414</p2>
+        </calibration>
+      </sensor>
+      <sensor id="38" label="Cam39" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>14653.859859173728</f>
+          <cx>102.14033401034116</cx>
+          <cy>160.91025994118237</cy>
+          <b1>84.076473743773477</b1>
+          <k1>-1.8629496068845905</k1>
+          <k2>272.31254411706237</k2>
+          <k3>-30253.189447613589</k3>
+          <p1>0.052638976913176594</p1>
+          <p2>0.054868938735878899</p2>
+        </calibration>
+      </sensor>
+      <sensor id="39" label="Cam40" type="frame">
+        <resolution width="2160" height="4096"/>
+        <property name="layer_index" value="0"/>
+        <calibration type="frame" class="adjusted">
+          <resolution width="2160" height="4096"/>
+          <f>4636.4269149343563</f>
+          <cx>-169.613394984542</cx>
+          <cy>97.116132931063177</cy>
+          <b1>42.15646635156132</b1>
+          <k1>-0.23577647436993845</k1>
+          <k2>14.282130048677088</k2>
+          <k3>-58.238184342073808</k3>
+          <p1>0.066921229305324945</p1>
+          <p2>0.074619972991240846</p2>
+        </calibration>
+      </sensor>
+    </sensors>
+    <components next_id="1" active_id="0">
+      <component id="0" label="Component 1">
+        <transform>
+          <rotation locked="false">-0.21984562515833861 0.69062848336752192 -0.68898490481302677 0.71276070809771452 -0.36849808332664785 -0.596809295819553 -0.66606311569609056 -0.62228728136292744 -0.41124015533888941</rotation>
+          <translation locked="false">-0.55566260577566917 1.1660387799323315 0.90241078743166181</translation>
+          <scale locked="false">0.58517027116677012</scale>
+        </transform>
+        <region>
+          <center>-0.0289573668985037 1.7216635369602982 -1.1562079526685551</center>
+          <size>3.4178086251924622 4.0125073259759514 1.8797947438558544</size>
+          <R>-0.21984562515833866 0.69062848336752203 -0.68898490481302677 0.71276070809771486 -0.36849808332664796 -0.59680929581955322 -0.66606311569609022 -0.62228728136292721 -0.41124015533888925</R>
+        </region>
+        <partition>
+          <camera_ids>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39</camera_ids>
+        </partition>
+      </component>
+    </components>
+    <cameras next_id="40" next_group_id="0">
+      <camera id="0" sensor_id="0" component_id="0" label="Cam01">
+        <transform>0.82799586119374435 0.027767993080143938 -0.56004624131077918 0.44219224710101868 -0.42662565833327482 -0.61695386418860831 -0.66133083786743452 1.7529665901174165 -0.36388652283057998 0.78650929303031425 -0.49898870776724524 -1.7034158115861635 0 0 0 1</transform>
+      </camera>
+      <camera id="1" sensor_id="1" component_id="0" label="Cam02">
+        <transform>0.43292764875138784 -0.17459895025964489 -0.88435787864123472 0.28778983239244116 -0.62789107362933128 -0.76232830059630197 -0.15687052548697505 1.2323694782151589 -0.64678160966681841 0.62319400565007332 -0.4396621210868813 -1.965930753533784 0 0 0 1</transform>
+      </camera>
+      <camera id="3" sensor_id="3" component_id="0" label="Cam04">
+        <transform>0.89330884129514554 -0.39047943879590674 -0.22254240481660453 0.13818351199878229 -0.42620759646456186 -0.89313581530194963 -0.1437202147953523 1.2857662316155689 -0.14264080334821835 0.22323580201785434 -0.9642714233646148 -1.3212057933895691 0 0 0 1</transform>
+      </camera>
+      <camera id="5" sensor_id="5" component_id="0" label="Cam06">
+        <transform>0.9806376962974539 -0.1907721838371593 0.044223098878571628 -0.10177301744249409 -0.12799324722889666 -0.79529315393507893 -0.59255930333410223 1.7241200720961665 0.14821416013399449 0.57542573211318571 -0.80431199764629757 -1.4011059529872327 0 0 0 1</transform>
+      </camera>
+      <camera id="6" sensor_id="6" component_id="0" label="Cam07">
+        <transform>0.86439657877667908 -0.25128713313577966 0.43551501847763419 -0.40911756289189222 0.092592217967562271 -0.77179665541480325 -0.62909188825033469 1.6581361729549751 0.49421173172135491 0.58411017745877836 -0.64387115544808671 -1.6272748270284514 0 0 0 1</transform>
+      </camera>
+      <camera id="7" sensor_id="7" component_id="0" label="Cam08">
+        <transform>0.76113503323981857 -0.017169323427219441 0.64836615851544255 -0.45457920498502691 0.19219925753103614 -0.94877952450703207 -0.25075258579071302 1.2968211093502737 0.61946178782838468 0.31547207199570293 -0.71884940370789741 -1.750915972354621 0 0 0 1</transform>
+      </camera>
+      <camera id="8" sensor_id="8" component_id="0" label="Cam09">
+        <transform>0.4813070034792149 0.25314371551287201 0.83920309085357714 -0.34207015555766013 0.48871312433325187 -0.87227555169436444 -0.017171022704640146 1.1631750110953396 0.72766960257131141 0.41839409796581745 -0.54354698810781721 -1.9680661987631851 0 0 0 1</transform>
+      </camera>
+      <camera id="10" sensor_id="10" component_id="0" label="Cam11">
+        <transform>-0.36418282690111897 0.043445814128381277 -0.93031356532355947 0.60854302272194238 -0.32600336926757134 -0.94166117271715666 0.083642327939513206 1.1500988236440814 -0.87240625388433679 0.33374645620840926 0.3571003096495815 -2.3628686355725996 0 0 0 1</transform>
+      </camera>
+      <camera id="11" sensor_id="11" component_id="0" label="Cam12">
+        <transform>0.13329649797567247 -0.19611056180525072 -0.97147964012420274 0.36996244298687359 -0.52666040497839361 -0.84438573025453589 0.09819142717421131 1.1011687691782721 -0.83955992130128287 0.49855128732252091 -0.21583732868445399 -2.064414664660466 0 0 0 1</transform>
+      </camera>
+      <camera id="12" sensor_id="12" component_id="0" label="Cam13">
+        <transform>0.41471325543217058 -0.59696595618520709 -0.68676383344256864 0.44874448070043971 -0.70191660339611861 -0.6901582495680274 0.17605303868451622 1.0478430691557612 -0.57907339573296546 0.40903940850372417 -0.70523809075036192 -1.6118067963021006 0 0 0 1</transform>
+      </camera>
+      <camera id="13" sensor_id="13" component_id="0" label="Cam14">
+        <transform>0.67454398551097927 -0.23211431127644316 -0.70079480456951582 0.81588019753345531 -0.55479629290494969 -0.78564397121487362 -0.27379668345808694 1.4907708558202684 -0.48702308465809729 0.57348626574172212 -0.6587275749623106 -1.2919478577880068 0 0 0 1</transform>
+      </camera>
+      <camera id="15" sensor_id="15" component_id="0" label="Cam16">
+        <transform>0.80858217781333885 0.012255246036453615 0.58825561677490401 -0.6673148490346672 0.36763518917971405 -0.79112040405818529 -0.48884851841813959 1.6581554156590024 0.45939006236468882 0.61153766460243497 -0.6441913189209918 -1.4696426456975853 0 0 0 1</transform>
+      </camera>
+      <camera id="16" sensor_id="16" component_id="0" label="Cam17">
+        <transform>-0.65386848909452111 -0.19812325289434027 -0.73020762501620995 0.22721830410597185 -0.20516545004005182 -0.88251810563165312 0.4231653711519659 1.0179952478098662 -0.72826034979196252 0.42650787788138639 0.53640273398446137 -2.3418496056710207 0 0 0 1</transform>
+      </camera>
+      <camera id="19" sensor_id="19" component_id="0" label="Cam20">
+        <transform>-0.34367758241453689 0.062487055097611183 -0.9370064499729589 0.49492244846288552 -0.39740826715331995 -0.91371261866198961 0.084828766913378983 1.1448290655530715 -0.85085391727598847 0.40152785512723366 0.33885541608926439 -2.3562069307563154 0 0 0 1</transform>
+      </camera>
+      <camera id="20" sensor_id="20" component_id="0" label="Cam21">
+        <transform>0.82455753845578428 -0.51468737971488443 -0.23495056275303131 0.16870777870036721 -0.42899747666207166 -0.83950139685466096 0.33346449540640444 0.90620684223462378 -0.36887129299162702 -0.17416746493332091 -0.91301679248817025 -1.334656921645321 0 0 0 1</transform>
+      </camera>
+      <camera id="21" sensor_id="21" component_id="0" label="Cam22">
+        <transform>0.3216273191430068 0.092269764816393207 -0.94235988777197488 0.72591785923572483 -0.57553067687664172 -0.77124006690898095 -0.2719433749296804 1.3935292969927688 -0.75187785414573538 0.62982144270813578 -0.19494779493558173 -1.9627543787929367 0 0 0 1</transform>
+      </camera>
+      <camera id="22" sensor_id="22" component_id="0" label="Cam23">
+        <transform>0.95111082677904413 -0.25232180525374093 0.17810643384554087 -0.19243774535897348 -0.210030504720461 -0.95121752721435648 -0.22599204191093369 1.3573888769194842 0.22644068157146865 0.17753569363285188 -0.95770856486498601 -1.3687173506302479 0 0 0 1</transform>
+      </camera>
+      <camera id="23" sensor_id="23" component_id="0" label="Cam24">
+        <transform>0.96962601775850255 -0.24119738488124259 0.040610432307940508 -0.11199438943674055 -0.0064342069510098555 -0.191128514612707 -0.98154393273192397 1.8503973635319968 0.24450764132578687 0.95146923882403611 -0.1868750943943851 -1.9635472312693898 0 0 0 1</transform>
+      </camera>
+      <camera id="25" sensor_id="25" component_id="0" label="Cam26">
+        <transform>0.45484235550416557 0.46329559776114104 -0.76057584811415724 0.71003631251751886 -0.38572954936661497 -0.66728071916769727 -0.63714139448984908 1.7714534709690006 -0.80270240212973731 0.58317547181117668 -0.12480073194080751 -2.0377477003268245 0 0 0 1</transform>
+      </camera>
+      <camera id="26" sensor_id="26" component_id="0" label="Cam27">
+        <transform>-0.63043138366183771 -0.1948167462992936 -0.7514004963104407 0.22691288674006746 -0.12250767481302405 -0.9308922299791047 0.34413881759609227 1.0710535113965376 -0.76651688833718878 0.30900823860519783 0.56299712998201601 -2.3224159368291715 0 0 0 1</transform>
+      </camera>
+      <camera id="27" sensor_id="27" component_id="0" label="Cam28">
+        <transform>0.87559070284328655 -0.048538002758316941 0.48060897139216274 -0.42036093913965705 -0.030574147631203537 -0.99851263090421694 -0.045141415810360713 1.205191841779474 0.48208520262607568 0.0248311943525098 -0.87577238435337956 -1.4480625303107058 0 0 0 1</transform>
+      </camera>
+      <camera id="29" sensor_id="29" component_id="0" label="Cam30">
+        <transform>-0.75986711710614396 -0.1678695087512859 -0.62803008874766408 0.23856426722795876 -0.018017315374871265 -0.96027408518225199 0.27847631438610898 1.0671767612025551 -0.64982870103395651 0.22292041036879237 0.72665614285818125 -2.4234982662489393 0 0 0 1</transform>
+      </camera>
+      <camera id="30" sensor_id="30" component_id="0" label="Cam31">
+        <transform>0.78315709575868553 -0.39721366790463958 0.47842059465763398 -0.29265282622683914 0.27637294102207494 -0.46686559206461137 -0.84003244962142309 1.5922515164477642 0.55703048465378424 0.79009988037962819 -0.25584999157800936 -2.0206404059296537 0 0 0 1</transform>
+      </camera>
+      <camera id="36" sensor_id="36" component_id="0" label="Cam37">
+        <transform>-0.85990062871928419 0.04871670745542523 -0.50813147033310402 0.30538433911685448 0.032168592085647804 -0.9882852443879061 -0.14918933409718935 1.2125740625958397 -0.50944684748402058 -0.14463387618341103 0.84825995511326269 -2.774259998475602 0 0 0 1</transform>
+      </camera>
+      <camera id="37" sensor_id="37" component_id="0" label="Cam38">
+        <transform>0.90324795117175416 -0.42779313585799872 0.033707144892552804 -0.058992073379675193 -0.22892389708903127 -0.54680913532832987 -0.80535310197642773 1.6907412244129756 0.36295590372054637 0.71971716836147703 -0.59183630297586343 -1.7504623989596173 0 0 0 1</transform>
+      </camera>
+      <camera id="38" sensor_id="38" component_id="0" label="Cam39">
+        <transform>0.91079892148001118 -0.20026455679747793 -0.36102552807462146 0.26312680971647273 -0.36560494761396684 -0.79745771954821665 -0.47999396643410686 1.5709346379555666 -0.19177681536368849 0.56917070622412336 -0.79954134368730068 -1.4361344058557413 0 0 0 1</transform>
+      </camera>
+      <camera id="39" sensor_id="39" component_id="0" label="Cam40">
+        <transform>-0.61911627976044614 0.059054056525029971 -0.78307576296519543 0.36398487854573702 -0.049222458632263572 -0.99812596451724189 -0.036355309415823558 1.1655190072955417 -0.7837551796969382 0.01603675043341804 0.62086281973859292 -2.4236780044255908 0 0 0 1</transform>
+      </camera>
+    </cameras>
+    <transform>
+      <rotation locked="false">-0.21984562515833861 0.69062848336752192 -0.68898490481302677 0.71276070809771452 -0.36849808332664785 -0.596809295819553 -0.66606311569609056 -0.62228728136292744 -0.41124015533888941</rotation>
+      <translation locked="false">-0.55566260577566917 1.1660387799323315 0.90241078743166181</translation>
+      <scale locked="false">0.58517027116677012</scale>
+    </transform>
+    <reference>LOCAL_CS["Local CS",LOCAL_DATUM["Local Datum",0],UNIT["meters",1]]</reference>
+    <region>
+      <center>-0.0289573668985037 1.7216635369602982 -1.1562079526685551</center>
+      <size>3.4178086251924622 4.0125073259759514 1.8797947438558544</size>
+      <R>-0.21984562515833866 0.69062848336752203 -0.68898490481302677 0.71276070809771486 -0.36849808332664796 -0.59680929581955322 -0.66606311569609022 -0.62228728136292721 -0.41124015533888925</R>
+    </region>
+    <settings>
+      <property name="accuracy_tiepoints" value="1"/>
+      <property name="accuracy_cameras" value="10"/>
+      <property name="accuracy_cameras_ypr" value="10"/>
+      <property name="accuracy_markers" value="0.0050000000000000001"/>
+      <property name="accuracy_scalebars" value="0.001"/>
+      <property name="accuracy_projections" value="0.5"/>
+    </settings>
+    <meta>
+      <property name="AlignCameras/adaptive_fitting" value="false"/>
+      <property name="AlignCameras/cameras" value=""/>
+      <property name="AlignCameras/duration" value="20.494142"/>
+      <property name="AlignCameras/min_image" value="2"/>
+      <property name="AlignCameras/point_clouds" value=""/>
+      <property name="AlignCameras/ram_used" value="28311552"/>
+      <property name="AlignCameras/reset_alignment" value="false"/>
+      <property name="AlignCameras/subdivide_task" value="true"/>
+      <property name="OptimizeCameras/adaptive_fitting" value="false"/>
+      <property name="OptimizeCameras/duration" value="0.525791"/>
+      <property name="OptimizeCameras/exclude_corners" value="false"/>
+      <property name="OptimizeCameras/fit_flags" value="f cx cy b1 k1 k2 k3 p1 p2"/>
+      <property name="OptimizeCameras/sigma0" value="1.01587731871803"/>
+    </meta>
+  </chunk>
+</document>

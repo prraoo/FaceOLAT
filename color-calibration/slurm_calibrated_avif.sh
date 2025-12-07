@@ -40,9 +40,9 @@ INPUT_DIR=/CT/datasets23/static00/FaceOLAT/OutputEXR
 OUTPUT_DIR=/CT/datasets23/static00/FaceOLAT/OutputAVIF
 
 # AVIF conversion settings
-AVIF_QUALITY=95
+AVIF_QUALITY=99
 EXPECTED_IMAGES=350
-GAMMA=2.2
+GAMMA=1.0
 CALIB_MATRIX="colorcalib_exr.mat"
 
 # Convert SLURM array task ID to camera number

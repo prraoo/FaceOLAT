@@ -1,0 +1,11 @@
+# FaceOLAT Relighting - Subject List
+# List one subject ID per line
+# Lines starting with # are comments and will be ignored
+
+# Example subjects:
+ID20003
+# ID20005
+# ID30001
+
+# Add your subject IDs below:
+

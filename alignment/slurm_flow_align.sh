@@ -10,21 +10,44 @@
 
 # FaceOLAT Optical Flow Alignment
 # Processes one subject with multi-GPU parallelization
-# Usage: sbatch slurm_flow_align.sh <subject_id> [--overwrite]
+# Usage: sbatch slurm_flow_align.sh <subject_id> [--overwrite] [--camera CAM]
 # Example: sbatch slurm_flow_align.sh 001
 # Example: sbatch slurm_flow_align.sh 001 --overwrite
+# Example: sbatch slurm_flow_align.sh 001 --camera Cam06  # Debug single camera
 
 # Check if subject argument is provided
 if [ $# -eq 0 ]; then
     echo "ERROR: Subject ID required"
-    echo "Usage: sbatch slurm_flow_align.sh <subject_id> [--overwrite]"
+    echo "Usage: sbatch slurm_flow_align.sh <subject_id> [--overwrite] [--camera CAM]"
     echo "Example: sbatch slurm_flow_align.sh 001"
     echo "Example: sbatch slurm_flow_align.sh 001 --overwrite"
+    echo "Example: sbatch slurm_flow_align.sh 001 --camera Cam06"
     exit 1
 fi
 
 SUBJECT_ARG=$1
-OVERWRITE_FLAG=${2:-""}  # Optional second argument
+shift  # Remove first positional argument
+
+# Parse optional arguments
+OVERWRITE_FLAG=""
+CAMERA_ARG=""
+
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --overwrite)
+            OVERWRITE_FLAG="--overwrite"
+            shift
+            ;;
+        --camera)
+            CAMERA_ARG="$2"
+            shift 2
+            ;;
+        *)
+            echo "Unknown option: $1"
+            exit 1
+            ;;
+    esac
+done
 
 # Go to base directory
 echo "Go to base directory"
@@ -41,7 +64,9 @@ INPUT_DIR=/CT/datasets23/static00/FaceOLAT/OutputAVIF
 OUTPUT_DIR=/CT/datasets23/static00/FaceOLAT/OutputAVIF_aligned
 
 # Flow alignment settings
-CENTER_FRAME=188          # Reference center frame for flow computation
+# NOTE: CENTER_FRAME should be 188 or 189 depending on the subject's keyframe pattern
+#       The script will automatically select the matching keyframe list
+CENTER_FRAME=188          # Reference center frame for flow computation (188 or 189)
 FLOW_SCALE_FACTOR=0.25    # Scale factor for flow computation (1/4 = 0.25)
 OUTPUT_SCALE_FACTOR=0.5   # Scale factor for output images (0.5 = half size)
 NUM_SLURM_TASKS=8         # Number of parallel GPU tasks (must match #SBATCH -a)
@@ -63,6 +88,10 @@ else
     echo "Overwrite mode: DISABLED (skip existing)"
 fi
 
+if [ -n "$CAMERA_ARG" ]; then
+    echo "DEBUG MODE: Processing only camera $CAMERA_ARG"
+fi
+
 # Check if RAFT model exists
 if [ ! -f "$RAFT_MODEL_PATH" ]; then
     echo "ERROR: RAFT model not found at $RAFT_MODEL_PATH"
@@ -78,7 +107,7 @@ echo "Finding unique IDs for subject $SUBJECT_ARG..."
 UNIQUE_IDS=""
 
 # Check first camera to find all matching unique IDs
-CAMERA="Cam01"
+CAMERA="Cam06"
 CAMERA_DIR="$INPUT_DIR/$CAMERA"
 
 if [ ! -d "$CAMERA_DIR" ]; then
@@ -111,11 +140,16 @@ ARGS="$INPUT_DIR $OUTPUT_DIR \
     --slurm-task-id $SLURM_ARRAY_TASK_ID \
     --slurm-total-tasks $NUM_SLURM_TASKS \
     --model $RAFT_MODEL_PATH \
-    --takes $UNIQUE_IDS"
+    --takes $UNIQUE_IDS" \
 
 # Add overwrite flag if specified
 if [ "$OVERWRITE_FLAG" = "--overwrite" ]; then
     ARGS="$ARGS --overwrite"
+fi
+
+# Add camera filter if specified (for debugging)
+if [ -n "$CAMERA_ARG" ]; then
+    ARGS="$ARGS --cameras $CAMERA_ARG"
 fi
 
 # Execute flow alignment

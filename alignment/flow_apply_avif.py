@@ -159,8 +159,14 @@ def apply_flow_to_camera_take(args_tuple):
             start_frame = full_lights[i]
             end_frame = full_lights[i + 1]
             
-            # Load flow for start frame
-            flow_file = os.path.join(camera_flow_dir, f"flow_{start_frame:03d}.npy")
+            # Special handling: if start_frame is the center frame, use flow from end_frame instead
+            if start_frame == center_frame:
+                flow_file = os.path.join(camera_flow_dir, f"flow_{end_frame:03d}.npy")
+                use_inverse_flow = True  # We'll reverse the interpolation direction
+            else:
+                flow_file = os.path.join(camera_flow_dir, f"flow_{start_frame:03d}.npy")
+                use_inverse_flow = False
+            
             if not os.path.exists(flow_file):
                 print(f"Warning: Flow file not found for {camera_name}/{take_name} frame {start_frame}")
                 continue
@@ -173,7 +179,12 @@ def apply_flow_to_camera_take(args_tuple):
                     continue
                 
                 # Calculate interpolation factor
-                factor = (end_frame - frame_num) / (end_frame - start_frame)
+                if use_inverse_flow:
+                    # For segment after center frame: interpolate from end_frame back toward center
+                    factor = (frame_num - start_frame) / (end_frame - start_frame)
+                else:
+                    # Normal case: interpolate from start_frame toward end
+                    factor = (end_frame - frame_num) / (end_frame - start_frame)
                 
                 # Output path
                 input_frame_path = frame_mapping[frame_num]
@@ -237,9 +248,28 @@ def main():
     
     args = parse_args()
     
-    # Full light frame indices (adjust as needed for your data)
-    # full_lights = [1, 21, 42, 63, 84, 105, 126, 147, 168, 189, 210, 231, 252, 273, 294, 315, 336, 349]
-    full_lights = [0, 20, 41, 62, 83, 104, 125, 146, 167, 188, 209, 230, 251, 272, 293, 314, 335, 348]
+    # Full light frame indices - select based on center_frame
+    # Different subjects may have different keyframe patterns (188 vs 189)
+    full_lights_188 = [0, 20, 41, 62, 83, 104, 125, 146, 167, 188, 209, 230, 251, 272, 293, 314, 335, 348]
+    full_lights_189 = [1, 21, 42, 63, 84, 105, 126, 147, 168, 189, 210, 231, 252, 273, 294, 315, 336, 349]
+    
+    # Select keyframe list based on center_frame
+    if args.center_frame == 188:
+        full_lights = full_lights_188
+    elif args.center_frame == 189:
+        full_lights = full_lights_189
+    else:
+        # For other center frames, try to determine the appropriate list
+        if args.center_frame in full_lights_188:
+            full_lights = full_lights_188
+        elif args.center_frame in full_lights_189:
+            full_lights = full_lights_189
+        else:
+            print(f"ERROR: center_frame ({args.center_frame}) not found in any predefined keyframe list")
+            print(f"Available keyframes: {full_lights_188} or {full_lights_189}")
+            return 1
+    
+    print(f"Using keyframe list: {full_lights}")
     
     print(f"Applying Pre-computed Optical Flow to AVIF Images")
     print(f"Input directory: {args.input_dir}")

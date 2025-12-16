@@ -103,7 +103,7 @@ def load_light_pattern_meta(sub: str) -> Dict[str, Any]:
         return json.load(f)
 
 def load_color_calib():
-    mat = np.loadtxt(Path("/CT/RelightAvatar2/nobackup/tmp/datasets/goliath") / "shared" / "mpi" / "colorcalib.mat", dtype=np.float32)
+    mat = np.loadtxt(Path("colorcalib.mat", dtype=np.float32)
     return torch.from_numpy(mat)
 
 def color_calib(image):

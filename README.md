@@ -8,6 +8,8 @@ The FaceOLAT dataset is hosted at [https://gvv-assets.mpi-inf.mpg.de/FaceOLAT/](
 
 For more information about the dataset and the related work, please visit the project page at [https://vcai.mpi-inf.mpg.de/projects/3dpr/](https://vcai.mpi-inf.mpg.de/projects/3dpr/).
 
+Explore the **[FaceOLAT capture gallery](DATASET.md)** to see all 407 released capture IDs and expressions.
+
 ## Processing Pipeline
 
 The pipeline converts raw RED camera footage (.R3D) into color-calibrated AVIF images suitable for image-based relighting applications:
